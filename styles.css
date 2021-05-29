@@ -1,0 +1,84 @@
+@font-face 
+{
+    font-family: "Anime Ace"; 
+    src: url("//db.onlinewebfonts.com/t/382d90421b8a09d016d91b6c39277ff0.eot"); 
+    src: url("//db.onlinewebfonts.com/t/382d90421b8a09d016d91b6c39277ff0.eot?#iefix") format("embedded-opentype"), 
+    url("//db.onlinewebfonts.com/t/382d90421b8a09d016d91b6c39277ff0.woff2") format("woff2"), 
+    url("//db.onlinewebfonts.com/t/382d90421b8a09d016d91b6c39277ff0.woff") format("woff"), 
+    url("//db.onlinewebfonts.com/t/382d90421b8a09d016d91b6c39277ff0.ttf") format("truetype"), 
+    url("//db.onlinewebfonts.com/t/382d90421b8a09d016d91b6c39277ff0.svg#Anime Ace") format("svg"); 
+}
+
+html {
+    height: 100%;
+}
+
+h1 {
+    color: #f5932b;
+    font-family: Anime Ace, Arial;
+    text-align: center;
+    font-size: 3em;
+}
+
+body {
+    background: radial-gradient(#0ccfd6, #085ca1);
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*How many columns do you want. Equivalent to 15rem 15rem 15rem 15rem*/
+.game-container
+{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, auto);
+    justify-content: center;
+}
+
+.game-info {
+    font-size: 2em;
+    font-family: Anime Ace;   
+    color: #f5932b;
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: space-between;
+    gap: 2%;
+}
+
+/* Setting up the front view of the cards */
+.card
+{
+    width: 265px;
+    height: 265px;
+}
+
+.front-back
+{
+    display: flex;
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    justify-content: center;
+    align-items: center;
+    transition: 500ms ease-in-out;
+    backface-visibility: hidden;
+}
+
+.card.flip .front-card
+{
+    transform: rotateY(180deg);
+}
+
+.card .back-card
+{
+    transform: rotateY(-180deg);
+}
+
+.card.flip .back-card
+{
+    transform: rotateY(0deg);
+}
+
+
