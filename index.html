@@ -2,7 +2,7 @@
 <html lang="eng">
     <head>
         <link href="styles.css" rel="stylesheet">
-        <script src="index.js"></script>
+        <link rel="shortcut icon" href="#" />
         <title> Card Match Game </title>
     </head>
     <body>
@@ -11,15 +11,19 @@
         </header>
         <div class="game-container">
             <div class="game-info">
-                <span id="Flips"> Flips : 0 </span>
-                <span id="Time"> Timer : 100 </span>
+                <span class="flips"> Flips: 
+                    <span id="Flips"> 0 </span>
+                </span> 
+                <span class="timer"> Timer: 
+                    <span id="Time"> 0 </span>
+                </span>
             </div>
-            <div class="card flip">
+            <div class="card">
                 <div class="front-card front-back">
                     <img src="Assets/images/mha.png" alt="mha">
                 </div>
                 <div class="back-card front-back">
-                    <img src="Assets/images/all-might-power.png" alt="all-might">
+                    <img class="card-val" src="Assets/images/all-might-power.png" alt="all-might">
                 </div>
             </div>
             <div class="card">
@@ -27,7 +31,7 @@
                     <img src="Assets/images/mha.png" alt="mha">
                 </div>
                 <div class="back-card front-back">
-                    <img src="Assets/images/tsukuyomi.png" alt="all-might">
+                    <img class="card-val" src="Assets/images/tsukuyomi.png" alt="all-might">
                 </div>
             </div>
             <div class="card">
@@ -35,7 +39,7 @@
                     <img src="Assets/images/mha.png" alt="mha">
                 </div>
                 <div class="back-card front-back">
-                    <img src="Assets/images/tsukuyomi.png" alt="all-might">
+                    <img class="card-val" src="Assets/images/tsukuyomi.png" alt="all-might">
                 </div>
             </div>
             <div class="card">
@@ -43,7 +47,7 @@
                     <img src="Assets/images/mha.png" alt="mha">
                 </div>
                 <div class="back-card front-back">
-                    <img src="Assets/images/tomura.png" alt="all-might">
+                    <img class="card-val" src="Assets/images/tomura.png" alt="all-might">
                 </div>
             </div>
             <div class="card">
@@ -51,7 +55,7 @@
                     <img src="Assets/images/mha.png" alt="mha">
                 </div>
                 <div class="back-card front-back">
-                    <img src="Assets/images/deku.png" alt="all-might">
+                    <img class="card-val" src="Assets/images/deku.png" alt="all-might">
                 </div>
             </div>
             <div class="card">
@@ -59,7 +63,7 @@
                     <img src="Assets/images/mha.png" alt="mha">
                 </div>
                 <div class="back-card front-back">
-                    <img src="Assets/images/tomura.png" alt="all-might">
+                    <img class="card-val" src="Assets/images/tomura.png" alt="all-might">
                 </div>
             </div>
             <div class="card">
@@ -67,7 +71,7 @@
                     <img src="Assets/images/mha.png" alt="mha">
                 </div>
                 <div class="back-card front-back">
-                    <img src="Assets/images/deku.png" alt="all-might">
+                    <img class="card-val" src="Assets/images/deku.png" alt="all-might">
                 </div>
             </div>
             <div class="card">
@@ -75,7 +79,7 @@
                     <img src="Assets/images/mha.png" alt="mha">
                 </div>
                 <div class="back-card front-back">
-                    <img src="Assets/images/bakugo.png" alt="all-might">
+                    <img class="card-val" src="Assets/images/bakugo.png" alt="all-might">
                 </div>
             </div>
             <div class="card">
@@ -83,7 +87,7 @@
                     <img src="Assets/images/mha.png" alt="mha">
                 </div>
                 <div class="back-card front-back">
-                    <img src="Assets/images/recovery-girl.png" alt="all-might">
+                    <img class="card-val" src="Assets/images/recovery-girl.png" alt="all-might">
                 </div>
             </div>
             <div class="card">
@@ -91,7 +95,7 @@
                     <img src="Assets/images/mha.png" alt="mha">
                 </div>
                 <div class="back-card front-back">
-                    <img src="Assets/images/all-might-power.png" alt="all-might">
+                    <img class="card-val" src="Assets/images/all-might-power.png" alt="all-might">
                 </div>
             </div>
             <div class="card">
@@ -99,7 +103,7 @@
                     <img src="Assets/images/mha.png" alt="mha">
                 </div>
                 <div class="back-card front-back">
-                    <img src="Assets/images/bakugo.png" alt="all-might">
+                    <img class="card-val" src="Assets/images/bakugo.png" alt="all-might">
                 </div>
             </div>
             <div class="card">
@@ -107,10 +111,11 @@
                     <img src="Assets/images/mha.png" alt="mha">
                 </div>
                 <div class="back-card front-back">
-                    <img src="Assets/images/recovery-girl.png" alt="all-might">
+                    <img class="card-val" src="Assets/images/recovery-girl.png" alt="all-might">
                 </div>
             </div>
         </div>
+        <script src="index.js" type="module"></script>
     </body>
 </html>
 
